@@ -9,16 +9,17 @@ import android.widget.TextView;
 import android.widget.EditText;
 
 public class question extends AppCompatActivity {
-    public static Random rand = new Random();
-    public static int score = 0;
-    public static int nroRan1, nroRan2;
-    public static String mainEx;
-    public static int vastaus;
-    public static String pAnsText;
-    public static int pAnsInt;
-    EditText pAns = findViewById(R.id.pAns);
-    TextView exerciseText = findViewById(R.id.exerciseText);
-    Button submAns = findViewById(R.id.submAns);
+    Random rand;
+    static int score;
+    int nroRan1;
+    int nroRan2;
+    String mainEx;
+    int vastaus;
+    String pAnsText;
+    int pAnsInt;
+    EditText pAns;
+    TextView exerciseText;
+    Button submAns;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +28,11 @@ public class question extends AppCompatActivity {
         exerciseX();
     }
     private void exerciseX() {
+        rand = new Random();
+        score = 0;
+        pAns = findViewById(R.id.pAns);
+        exerciseText = (TextView) findViewById(R.id.exerciseText);
+        submAns = (Button) findViewById(R.id.submAns);
         nroRan1 = rand.nextInt(1000) + 1;
         nroRan2 = rand.nextInt(1000) + 1;
         mainEx = (nroRan1 + "+" + nroRan2);

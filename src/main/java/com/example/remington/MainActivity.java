@@ -7,13 +7,15 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    Button startGameBtn = findViewById(R.id.startGameBtn);
+    private Button startGameBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        loaDed();
     }
     private void loaDed() {
+        startGameBtn = (Button) findViewById(R.id.startGameBtn);
         startGameBtn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 startGame();
