@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".question">
+
+    <TextView
+        android:id="@+id/exerciseText"
+        android:layout_width="274dp"
+        android:layout_height="75dp"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        tools:layout_editor_absoluteX="68dp"
+        tools:layout_editor_absoluteY="315dp" />
+
+    <Button
+        android:id="@+id/submAns"
+        android:layout_width="170dp"
+        android:layout_height="88dp"
+        android:text="Submit"
+        android:textSize="34sp"
+        tools:layout_editor_absoluteX="68dp"
+        tools:layout_editor_absoluteY="490dp" />
+
+    <EditText
+        android:id="@+id/pAns"
+        android:layout_width="272dp"
+        android:layout_height="77dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="34sp"
+        tools:layout_editor_absoluteX="68dp"
+        tools:layout_editor_absoluteY="399dp" />
+</android.support.constraint.ConstraintLayout>
