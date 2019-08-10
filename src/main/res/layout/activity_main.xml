@@ -10,8 +10,8 @@
         android:id="@+id/scoreText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="233dp"
-        android:layout_marginBottom="84dp"
+        android:layout_marginTop="261dp"
+        android:layout_marginBottom="79dp"
         android:text="Remington"
         android:textSize="40sp"
         app:layout_constraintBottom_toTopOf="@+id/startGameBtn"
@@ -21,9 +21,9 @@
 
     <Button
         android:id="@+id/startGameBtn"
-        android:layout_width="197dp"
-        android:layout_height="269dp"
-        android:layout_marginBottom="269dp"
+        android:layout_width="186dp"
+        android:layout_height="124dp"
+        android:layout_marginBottom="213dp"
         android:text="Start"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"

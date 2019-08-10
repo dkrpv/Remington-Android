@@ -12,12 +12,12 @@
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-                <action android:name="android.intent.action.question" />
-                <action android:name="android.intent.action.ulost" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".question" />
+        <activity android:name=".ulost" />
     </application>
 
 </manifest>

@@ -8,29 +8,39 @@
 
     <TextView
         android:id="@+id/exerciseText"
-        android:layout_width="274dp"
-        android:layout_height="75dp"
+        android:layout_width="224dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="196dp"
+        android:layout_marginBottom="18dp"
         android:textAlignment="center"
         android:textSize="40sp"
-        tools:layout_editor_absoluteX="68dp"
-        tools:layout_editor_absoluteY="315dp" />
+        app:layout_constraintBottom_toTopOf="@+id/pAns"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/submAns"
         android:layout_width="170dp"
-        android:layout_height="88dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="217dp"
         android:text="Submit"
         android:textSize="34sp"
-        tools:layout_editor_absoluteX="68dp"
-        tools:layout_editor_absoluteY="490dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pAns" />
 
     <EditText
         android:id="@+id/pAns"
-        android:layout_width="272dp"
-        android:layout_height="77dp"
+        android:layout_width="224dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="60dp"
         android:ems="10"
         android:inputType="number"
         android:textSize="34sp"
-        tools:layout_editor_absoluteX="68dp"
-        tools:layout_editor_absoluteY="399dp" />
+        app:layout_constraintBottom_toTopOf="@+id/submAns"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/exerciseText" />
 </android.support.constraint.ConstraintLayout>
